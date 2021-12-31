@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(70, 70, 255);
+    color: white;
+    font: normal 10pt Arial;
+}
+
+#cabecalho img{
+    height: 50px;
+    border-radius: 90% 40%;
+    top: 15px;
+    position: absolute;
+    display: block;
+    margin-left: 35%;
+    margin-right: 75%;
+    
+}
+
+#cabecalho h2{
+    margin-left: 40%;
+    margin-right: 60%;
+    margin-top: 30px;
+    width: 6em;
+    margin-bottom: 70px;
+}
+
+#titulo h1, #titulo p{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#texto form{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+ #texto p{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+ }
+
+ textarea:valid {
+    border: 3   px solid blue;
+ }
