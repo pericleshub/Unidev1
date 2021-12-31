@@ -4,9 +4,15 @@ var captar = [];
 var campo = document.querySelector("textarea")
 var but = document.querySelector("button")
 const entrada = [];
+var att = 0;
 
 but.onclick = function(){
     entrada.push(campo.value);
+    
+    att++;
+    if(att > 1){
+        document.location.reload(true);
+    }
 
     var resultado = String(entrada);
     var resultado1 = resultado.split(' ');
