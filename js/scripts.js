@@ -1,4 +1,4 @@
-const palavroes = ['merda', 'porra', 'corno', 'foder', 'desgraça', 'puto', 'cu', 'merda,', 'porra,', 'corno,', 'foder,', 'desgraça,', 'puto,', 'cu,']
+const palavroes = ['merda', 'porra', 'corno', 'foder', 'desgraça', 'puto', 'cu']
 var captar = [];
 
 var campo = document.querySelector("textarea")
@@ -14,7 +14,7 @@ but.onclick = function(){
     var num = resultado1.length;
 
     for(var i = 0; i < num; i++){
-        for(var j = 0; j < 14; j++){
+        for(var j = 0; j < 7; j++){
             if(resultado1[i] == palavroes[j] | resultado1[i] == palavroes[j] + ',' |
             resultado1[i] == palavroes[j] + '.' | resultado1[i] == palavroes[j] + '\n' |
             resultado1[i] == palavroes[j] + '.\n'){
@@ -25,5 +25,4 @@ but.onclick = function(){
     }
     resultado1 = resultado1.join(' ');
     document.querySelector("textarea").value = resultado1;
-
-}
+ }   
